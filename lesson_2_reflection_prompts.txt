@@ -1,0 +1,33 @@
+What happens when you initialize a repository? Why do you need to do it?
+--> git init initializes a repository and doing it creates .git where all the versions of the files are saved for future references. It is easy to go back what changes are committed.
+
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+--> staging area provides an option to add the files before moving to the repo. and can provide a single common commit to entire files or commit for each file.
+
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+--> by using command git diff --staged compares staging area and recent commit.
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+--> Well branches help to organize the work as they dont commit to straight away to master file.
+
+How do the diagrams help you visualize the branch structure?
+
+--> diagrams show the structure of what the previous work is performed on a particular directory
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+--> Result of merging two branches is a master file with all the previous versions of the file modified.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+--> always merging manually helps in checking with bugs and choose what particular file to merge before it goes public, if there are any dependencies between the files there would be missing commit histroy.
